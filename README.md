@@ -22,5 +22,5 @@ grunt karma
 or
 
 ```
-grunt mocha
+grunt jasmine
 ```

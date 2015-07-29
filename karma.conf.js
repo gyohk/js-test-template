@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Sun Jul 12 2015 17:14:59 GMT+0900 (東京 (標準時))
+// Generated on Wed Jul 29 2015 18:21:07 GMT+0900 (東京 (標準時))
 
 module.exports = function(config) {
   config.set({
@@ -10,13 +10,17 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'src/*.js',
-      'test/*.js'
+        'src/*.js',
+        'spec/*.js',
+        {pattern: 'spec/fixtures/*', included: false, served: true},
+        'node_modules/jasmine-ajax/lib/mock-ajax.js',
+        'node_modules/jasmine-jquery/vendor/jquery/jquery.js',
+        'node_modules/jasmine-jquery/lib/jasmine-jquery.js'
     ],
 
 
@@ -62,5 +66,5 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true
-  })
-}
+  });
+};
