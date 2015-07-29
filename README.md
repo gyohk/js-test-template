@@ -1,6 +1,6 @@
 js-test-template
 ===========================
-[![Build Status](https://travis-ci.org/gyohk/js-test-template.png?branch=master)](https://travis-ci.org/gyohk/js-test-template)
+[![Build Status](https://travis-ci.org/gyohk/js-test-template.png?branch=mocha-chai)](https://travis-ci.org/gyohk/js-test-template)
 
 ## prerequisite
 * [node.js](http://nodejs.org/)
